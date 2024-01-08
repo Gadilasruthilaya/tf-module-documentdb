@@ -4,7 +4,7 @@ resource "aws_docdb_subnet_group" "main" {
 
   tags =  merge({
     Name = "${var.component}-${var.env}"
-  })
+  }, var.tags)
 }
 
 resource "aws_security_group" "main" {
