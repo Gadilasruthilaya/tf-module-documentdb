@@ -1,5 +1,5 @@
 resource "aws_docdb_subnet_group" "main" {
-  name       = "main"
+  name       = "docdb_main"
   subnet_ids = var.subnet_ids
 
   tags =  merge({
